@@ -16,7 +16,7 @@
                 <li><a href="#">Shipping</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a class="login-button" href="/DHL/login.html">Login</a></li>
+                <li id="login-button-container"><a class="login-button" href="/DHL/login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -75,6 +75,16 @@
                 document.getElementById("error-message").style.display = "block";
             }
         }
+
+        // Remove the login button if the user is logged in
+        document.addEventListener("DOMContentLoaded", function() {
+            if (localStorage.getItem("loggedIn") === "true") {
+                const loginButtonContainer = document.getElementById("login-button-container");
+                if (loginButtonContainer) {
+                    loginButtonContainer.remove(); // Remove the login button container from the DOM
+                }
+            }
+        });
     </script>
 </body>
 </html>
