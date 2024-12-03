@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="/DHL/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .orders-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            margin-top: 2rem;
+        }
+
+        .orders-container h1 {
+            color: #0057b8;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .order {
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+
+        .order:last-child {
+            border-bottom: none;
+        }
+
+        .order h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .order p {
+            margin: 0.5rem 0 0;
+            color: #555;
+        }
+
+        .status {
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .status.ordered {
+            color: #ff9900;
+        }
+
+        .status.in-transit {
+            color: #0057b8;
+        }
+
+        .status.delivered {
+            color: #28a745;
+        }
+
+        .status.in-depot {
+            color: #ffc107;
+        }
+
+        .status.canceled {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="orders-container">
+        <h1>Your Orders</h1>
+        <div class="order">
+            <h2>Order #12345</h2>
+            <p>Product: Wireless Headphones</p>
+            <p class="status ordered">Status: Ordered</p>
+        </div>
+        <div class="order">
+            <h2>Order #12346</h2>
+            <p>Product: Fitness Tracker</p>
+            <p class="status in-transit">Status: In-Transit</p>
+        </div>
+        <div class="order">
+            <h2>Order #12347</h2>
+            <p>Product: Laptop Stand</p>
+            <p class="status delivered">Status: Delivered</p>
+        </div>
+        <div class="order">
+            <h2>Order #12348</h2>
+            <p>Product: Desk Chair</p>
+            <p class="status in-depot">Status: In Depot</p>
+        </div>
+        <div class="order">
+            <h2>Order #12349</h2>
+            <p>Product: Smartphone</p>
+            <p class="status canceled">Status: Canceled</p>
+        </div>
+    </div>
+</body>
+</html>
