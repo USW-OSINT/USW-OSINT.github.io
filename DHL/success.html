@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Successful</title>
+    <style>
+        /* Styling for the success page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .success-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+
+        .success-container h1 {
+            margin-bottom: 1rem;
+            color: #0057b8;
+        }
+
+        .success-container p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .success-container a {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #0057b8;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .success-container a:hover {
+            background: #004090;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h1>Welcome Back!</h1>
+        <p>You have successfully logged in. Click below to explore more.</p>
+        <a href="/DHL/orders.html">View Orders</a>
+    </div>
+
+    <script>
+        // Check if the user is logged in
+        if (localStorage.getItem("loggedIn") !== "true") {
+            // Redirect to the login page if not logged in
+            alert("Access denied. Please log in first.");
+            window.location.href = "/DHL/login.html";
+        }
+    </script>
+</body>
+</html>
