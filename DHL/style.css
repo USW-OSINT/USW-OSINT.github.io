@@ -20,6 +20,7 @@ body {
     font-weight: bold;
 }
 
+/* Styling for the Login Button */
 .nav ul {
     list-style: none;
     display: flex;
@@ -42,6 +43,17 @@ body {
     color: #0057b8;
 }
 
+.login-button {
+    background-color: #0057b8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.login-button:hover {
+    background-color: #004090;
+}
 /* Hero Section */
 .hero {
     background: #0057b8;

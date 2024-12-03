@@ -16,6 +16,7 @@
                 <li><a href="#">Shipping</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a class="login-button" href="/DHL/login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -24,9 +25,9 @@
         <div class="hero-content">
             <h1>Welcome to My Logistics</h1>
             <p>Your reliable shipping and logistics partner.</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Enter tracking number...">
-                <button>Track</button>
+            <div class="orders-section">
+                <button onclick="openOrders()">Open Orders</button>
+                <p id="error-message" style="color: red; display: none;">You must log in to view your orders.</p>
             </div>
         </div>
     </section>
@@ -62,5 +63,18 @@
         </div>
         <p>&copy; 2024 My Logistics. All rights reserved.</p>
     </footer>
+
+    <script>
+        function openOrders() {
+            // Check if the user is logged in
+            if (localStorage.getItem("loggedIn") === "true") {
+                // Redirect to orders page
+                window.location.href = "/DHL/orders.html";
+            } else {
+                // Show error message
+                document.getElementById("error-message").style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
