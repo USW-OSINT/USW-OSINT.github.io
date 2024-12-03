@@ -1,3 +1,26 @@
+<?php
+// Start session
+session_start();
+
+// Hardcoded credentials
+define('USERNAME', 'admin');
+define('PASSWORD', 'password123');
+
+// Handle login form submission
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if ($username === USERNAME && $password === PASSWORD) {
+        // Successful login, set session variable
+        $_SESSION['loggedin'] = true;
+        header('Location: success.php'); // Redirect to success page
+        exit;
+    } else {
+        $error = "Invalid username or password.";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
