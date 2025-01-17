@@ -22,6 +22,7 @@ body {
 
 /* Styling for the Login Button */
 .nav ul {
+    color: ghostwhite;
     list-style: none;
     display: flex;
     margin: 0;
@@ -52,7 +53,7 @@ body {
 }
 
 .login-button:hover {
-    background-color: #004090;
+    background-color: white;
 }
 /* Hero Section */
 .hero {
