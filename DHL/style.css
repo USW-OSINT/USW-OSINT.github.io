@@ -7,7 +7,7 @@ body {
 
 /* Header */
 .header {
-    background: #ffcc00;
+    background: #ffCC00;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,11 +40,11 @@ body {
 }
 
 .nav ul li a:hover {
-    color: #0057b8;
+    color: #D40511;
 }
 
 .login-button {
-    background-color: #0057b8;
+    background-color: #D40511;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -56,7 +56,7 @@ body {
 }
 /* Hero Section */
 .hero {
-    background: #0057b8;
+    background: #D40511;
     color: white;
     text-align: center;
     padding: 3rem 1rem;
