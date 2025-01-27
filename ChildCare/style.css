@@ -247,3 +247,40 @@ body {
 .success-container a:hover {
     background: #ffcccb;
 }
+
+/* Family Details Section */
+.family-details {
+    background: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.family-details h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f8bbd0;
+}
+
+.child-details {
+    background: #ffecb3;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.child-details h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.child-details p {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.child-details ul {
+    list-style: disc;
+    padding-left: 20px;
+}
