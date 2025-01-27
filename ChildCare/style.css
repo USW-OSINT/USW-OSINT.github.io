@@ -261,13 +261,21 @@ body {
     color: #f8bbd0;
 }
 
+.child-details-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .child-details {
     background: #ffecb3;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
     text-align: left;
+    flex: 1 1 300px;
+    max-width: 300px;
 }
 
 .child-details h2 {
