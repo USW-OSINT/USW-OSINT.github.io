@@ -210,3 +210,40 @@ body {
     margin-top: 1rem;
     display: none;
 }
+
+/* Styling for the success page */
+.success-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.success-container h1 {
+    margin-bottom: 1rem;
+    color: #D40511;
+}
+
+.success-container p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.success-container a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #D40511;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.success-container a:hover {
+    background: #FFCC00;
+}
