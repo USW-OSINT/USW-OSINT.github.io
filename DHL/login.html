@@ -75,8 +75,8 @@
 
     <script>
         // Hardcoded credentials
-        const VALID_USERNAME = "HareL@gmail.com";
-        const VALID_PASSWORD = "George";
+        const pinkPanther = atob("SGFyZUxAZ21haWwuY29t");
+        const blueSky = atob("R2Vvcmdl");
     
         function handleLogin() {
             // Get input values
@@ -84,7 +84,7 @@
             const password = document.getElementById("password").value;
     
             // Check if credentials match
-            if (username === VALID_USERNAME && password === VALID_PASSWORD) {
+            if (username === pinkPanther && password === blueSky) {
                 // Save login status to localStorage
                 localStorage.setItem("loggedIn", "true");
                 // Redirect to the success page
