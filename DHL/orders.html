@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Orders</title>
     <link rel="stylesheet" href="/DHL/style.css">
+    <script>
+        // Check if the user is logged in
+        if (localStorage.getItem("loggedIn") !== "true") {
+            // Redirect to the login page if not logged in
+            alert("Access denied. Please log in first.");
+            window.location.href = "/DHL/login.html";
+        }
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;

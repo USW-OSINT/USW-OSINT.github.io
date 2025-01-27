@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family Details - ChildCare Management Hub</title>
     <link rel="stylesheet" href="/ChildCare/style.css">
+    <script>
+        // Check if the user is logged in
+        if (localStorage.getItem("loggedIn") !== "true") {
+            // Redirect to the login page if not logged in
+            alert("Access denied. Please log in first.");
+            window.location.href = "/ChildCare/login.html";
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -25,7 +33,7 @@
         <h1>Family Details</h1>
         <div class="child-details-container">
             <div class="child-details">
-                <button class="accordion">John Doe</button>
+                <button class="accordion">TODO</button>
                 <div class="panel">
                     <p><strong>Date of Birth:</strong> 01/01/2015</p>
                     <p><strong>Immunisation Records:</strong></p>
@@ -39,7 +47,7 @@
                 </div>
             </div>
             <div class="child-details">
-                <button class="accordion">Jane Doe</button>
+                <button class="accordion">TODO</button>
                 <div class="panel">
                     <p><strong>Date of Birth:</strong> 05/05/2017</p>
                     <p><strong>Immunisation Records:</strong></p>
