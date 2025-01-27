@@ -225,7 +225,7 @@ body {
 
 .success-container h1 {
     margin-bottom: 1rem;
-    color: #D40511;
+    color: #f8bbd0;
 }
 
 .success-container p {
@@ -237,7 +237,7 @@ body {
 .success-container a {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background: #D40511;
+    background: #f8bbd0;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -245,5 +245,5 @@ body {
 }
 
 .success-container a:hover {
-    background: #FFCC00;
+    background: #ffcccb;
 }
