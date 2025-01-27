@@ -7,7 +7,7 @@ body {
 
 /* Header */
 .header {
-    background: #ffCC00;
+    background: #ffcc00;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,9 +20,8 @@ body {
     font-weight: bold;
 }
 
-/* Styling for the Login Button */
+/* Navigation */
 .nav ul {
-    color: ghostwhite;
     list-style: none;
     display: flex;
     margin: 0;
@@ -41,11 +40,12 @@ body {
 }
 
 .nav ul li a:hover {
-    color: #D40511;
+    color: #d40511;
 }
 
+/* Login Button */
 .login-button {
-    background-color: #D40511;
+    background-color: #d40511;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -54,10 +54,12 @@ body {
 
 .login-button:hover {
     background-color: white;
+    color: #d40511;
 }
+
 /* Hero Section */
 .hero {
-    background: #D40511;
+    background: #d40511;
     color: white;
     text-align: center;
     padding: 3rem 1rem;
@@ -73,6 +75,7 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Search Bar */
 .search-bar {
     display: flex;
     justify-content: center;
