@@ -1,138 +1,54 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #ffffff;
+/* Custom Colors */
+:root {
+    --nationwide-red: #cc0000;
+    --nationwide-blue: #003399;
+    --nationwide-white: #ffffff;
 }
 
-header {
-    background-color: #cc0000; /* Nationwide red */
-    color: white;
-    padding: 10px 20px;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
+/* Header */
+.bg-red {
+    background-color: var(--nationwide-red);
 }
 
 /* Hero Section */
-.hero {
-    background-color: #003399; /* Nationwide blue */
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
+.bg-blue {
+    background-color: var(--nationwide-blue);
 }
 
-.hero h1 {
-    margin: 0;
-    font-size: 2.5em;
+.hero .btn-red {
+    background-color: var(--nationwide-red);
+    color: var(--nationwide-white);
+    border: none;
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin: 10px 0 20px;
-}
-
-.cta-button {
-    background-color: #cc0000; /* Nationwide red */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.cta-button:hover {
-    background-color: #b30000; /* Darker red on hover */
+.hero .btn-red:hover {
+    background-color: #b30000; /* Darker red */
 }
 
 /* Services Section */
-.services {
-    padding: 20px;
-    text-align: center;
-}
-
-.services h2 {
-    color: #003399; /* Nationwide blue */
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.service-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.text-blue {
+    color: var(--nationwide-blue);
 }
 
 .card {
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    min-width: 200px;
-    border: 1px solid #e0e0e0;
+    border: none;
+    transition: transform 0.2s;
 }
 
-.card h3 {
-    color: #003399; /* Nationwide blue */
-    font-size: 1.5em;
-    margin: 0 0 10px;
-}
-
-.card p {
-    font-size: 1em;
-    color: #666;
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* Footer */
 footer {
-    background-color: #003399; /* Nationwide blue */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    background-color: var(--nationwide-blue);
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-}
-
-footer ul li {
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: white;
+footer a {
+    color: var(--nationwide-white);
     text-decoration: none;
 }
 
-footer ul li a:hover {
+footer a:hover {
     text-decoration: underline;
 }
