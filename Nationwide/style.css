@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 header {
-    background-color: #004a8d;
+    background-color: #cc0000; /* Nationwide red */
     color: white;
     padding: 10px 20px;
 }
@@ -37,7 +37,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: #0073e6;
+    background-color: #003399; /* Nationwide blue */
     color: white;
     padding: 50px 20px;
     text-align: center;
@@ -54,8 +54,8 @@ header nav ul li a:hover {
 }
 
 .cta-button {
-    background-color: #ffcc00;
-    color: #004a8d;
+    background-color: #cc0000; /* Nationwide red */
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -64,7 +64,7 @@ header nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #e6b800;
+    background-color: #b30000; /* Darker red on hover */
 }
 
 /* Services Section */
@@ -74,7 +74,7 @@ header nav ul li a:hover {
 }
 
 .services h2 {
-    color: #004a8d;
+    color: #003399; /* Nationwide blue */
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -93,10 +93,11 @@ header nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 30%;
     min-width: 200px;
+    border: 1px solid #e0e0e0;
 }
 
 .card h3 {
-    color: #0073e6;
+    color: #003399; /* Nationwide blue */
     font-size: 1.5em;
     margin: 0 0 10px;
 }
@@ -108,7 +109,7 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #004a8d;
+    background-color: #003399; /* Nationwide blue */
     color: white;
     text-align: center;
     padding: 20px;
