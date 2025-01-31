@@ -25,62 +25,38 @@
     </header>
 
     <!-- Login Form Section -->
-    <section class="hero bg-blue text-white py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h2 class="text-center mb-4 text-blue">Internet Banking Login</h2>
-                            <form id="loginForm" onsubmit="return handleLogin()">
-                                <div class="mb-3">
-                                    <label for="username" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="username" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" required>
-                                </div>
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-red">Log In</button>
-                                </div>
-                            </form>
-                            <div id="errorMessage" class="text-danger mt-3" style="display: none;">
-                                Incorrect password. Please try again.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+    <body>
+        <div class="login-container">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="handleLogin()">Login</button>
+            <p class="error-message" id="error-message">Invalid username or password. This attempt has been logged!</p>
         </div>
-    </section>
-
-    <!-- Same footer as index page -->
-    <footer class="bg-blue text-white py-4">
-        <!-- ... same footer content ... -->
-    </footer>
-
-    <script>
-        // Obfuscated credentials with unrelated variable names
-        const pinkPanther = atob("QS5Eb25hbGRzb24=");
-        const blueSky = atob("SmFtZXM0MzY4");
-
-        function handleLogin() {
-            // Get input values
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            // Check if credentials match
-            if (username === pinkPanther && password === blueSky) {
-                // Save login status to localStorage
-                localStorage.setItem("loggedIn", "true");
-                // Redirect to the success page
-                window.location.href = "/Nationwide/card-details.html";
-            } else {
-                // Show error message
-                document.getElementById("error-message").style.display = "block";
+    
+        <script>
+            // Obfuscated credentials with unrelated variable names
+            const pinkPanther = atob("QS5Eb25hbGRzb24");
+            const blueSky = atob("SmFtZXM0MzY4");
+    
+            function handleLogin() {
+                // Get input values
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+    
+                // Check if credentials match
+                if (username === pinkPanther && password === blueSky) {
+                    // Save login status to localStorage
+                    localStorage.setItem("loggedIn", "true");
+                    // Redirect to the success page
+                    window.location.href = "/ChildCare/familydetails.html";
+                } else {
+                    // Show error message
+                    document.getElementById("error-message").style.display = "block";
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 </html>
