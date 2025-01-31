@@ -9,6 +9,14 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/Nationwide/style.css">
+        <script>
+            // Check if the user is logged in
+            if (localStorage.getItem("loggedIn") !== "true") {
+                // Redirect to the login page if not logged in
+                alert("Access denied. Please log in first.");
+                window.location.href = "/Nationwide/login.html";
+            }
+        </script>
     </head>
 <body>
     <!-- Same header with logout option -->
