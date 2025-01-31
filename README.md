@@ -1,6 +1,6 @@
 # **USW OSINT & Digital Forensics Activity – Investigative Task**
 
-<img src="USW_Full_Logo_Red_RGB.png" alt="USW Logo - Red" style="max-width: 100%; height: auto; display: block; margin: auto; border-radius: 8px;">
+<img src="USW_Full_Logo_Red_RGB.png" alt="USW Logo - Red" style="max-width: 50%; height: auto; display: block; margin: auto; border-radius: 8px;">
 
 
 ## **Objective**
