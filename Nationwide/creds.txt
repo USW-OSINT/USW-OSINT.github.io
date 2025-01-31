@@ -1,3 +1,0 @@
-username: A.Donaldson
-
-password: James4368
