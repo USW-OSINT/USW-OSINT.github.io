@@ -38,11 +38,21 @@ Your team has been assigned to an investigative task that requires analysing evi
 - Once you gain access to the investigation websites, your task is to locate and extract specific pieces of information.
 - Record your findings and be prepared to explain how your team arrived at them.
 
+## 🔗 Target Websites
+
+Each group has been assigned a specific website to investigate. Use the information you uncover to gain access.
+
+- 🕵️‍♂️ **[Group 1 Target Website](http://USW-osint.github.io/DHL/)**
+- 🔍 **[Group 2 Target Website](https://usw-osint.github.io/ChildCare/)**
+- 🧩 **[Group 3 Target Website](https://usw-osint.github.io/Nationwide/)**
+
+🚨 **Note:** Only the homepage and login page will work as part of this exercise. These are the only pages where interaction is possible.
+
 
 ## **Rules & Guidelines**
 ✔ **Confidentiality**: Treat the information as sensitive—do not share findings with other teams.  
 ✔ **Teamwork**: Work collaboratively, discussing your findings and theories.  
 ✔ **Methodical Approach**: Be systematic in your search, ensuring no clue is overlooked.  
-✔ **Respect Materials**: Do not damage or discard any evidence. All materials must be returned at the end of the activity.  
+✔ **Respect Materials**: Do not damage or discard any evidence. All materials must be returned at the end of the activity.
 
 Good luck, investigators! 🚔🔍 
