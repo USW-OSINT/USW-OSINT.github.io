@@ -44,12 +44,12 @@ function setupLoginForm() {
         // The actual credential checking would be implemented by you
         
         if (username && password) {
-            // Authentication would be verified on the server
-            // For demo purposes, we're just simulating a successful login
-            // Replace this with your actual authentication logic
+            // Hardcoded credentials check
+            const validUsername = "your_username_here";
+            const validPassword = "your_password_here";
             
-            // This is a placeholder - credentials should be validated by you
-            const isValid = true; // This is a placeholder
+            // Validate against hardcoded credentials
+            const isValid = (username === validUsername && password === validPassword);
             
             if (isValid) {
                 loginMessage.textContent = "Login successful! Redirecting...";
@@ -68,10 +68,12 @@ function setupLoginForm() {
                 loginMessage.className = "login-message login-error";
             }
         } else {
-            loginMessage.textContent = "Please enter both username and password";
+            loginMessage.textContent = "Please enter your username and password";
             loginMessage.className = "login-message login-error";
         }
-    });
+}
+);
+
 }
 
 // Helper function to format numbers with commas
