@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Dashboard - BlueBovine Energy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>BlueBovine</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="sign-in.html" class="sign-in-btn">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="affiliate-dashboard">
+        <div class="dashboard-header">
+            <h2>Affiliate Dashboard</h2>
+            <p>Welcome back, <span id="affiliateName">Affiliate</span>!</p>
+        </div>
+        
+        <div class="stats-cards">
+            <div class="stat-card">
+                <h3>Total Sales</h3>
+                <p class="stat-number">$<span id="totalSales">24,895</span></p>
+                <p class="stat-trend up">↑ 15% from last month</p>
+            </div>
+            <div class="stat-card">
+                <h3>Commissions</h3>
+                <p class="stat-number">$<span id="totalCommissions">3,734</span></p>
+                <p class="stat-trend up">↑ 12% from last month</p>
+            </div>
+            <div class="stat-card">
+                <h3>Clicks</h3>
+                <p class="stat-number"><span id="totalClicks">18,432</span></p>
+                <p class="stat-trend up">↑ 8% from last month</p>
+            </div>
+            <div class="stat-card">
+                <h3>Conversion Rate</h3>
+                <p class="stat-number"><span id="conversionRate">5.2</span>%</p>
+                <p class="stat-trend down">↓ 1% from last month</p>
+            </div>
+        </div>
+        
+        <div class="performance-chart">
+            <h3>Performance Over Time</h3>
+            <div class="chart-container">
+                <div class="chart-placeholder">
+                    <img src="/api/placeholder/800/400" alt="Performance Chart Placeholder" class="chart-image">
+                </div>
+            </div>
+        </div>
+        
+        <div class="affiliate-links">
+            <h3>Your Affiliate Links</h3>
+            <table class="links-table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Link</th>
+                        <th>Clicks</th>
+                        <th>Conversions</th>
+                        <th>Commission</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Homepage Link</td>
+                        <td>bluebovine.com/?ref=AF12345</td>
+                        <td>8,421</td>
+                        <td>412</td>
+                        <td>$1,648</td>
+                    </tr>
+                    <tr>
+                        <td>Original Formula</td>
+                        <td>bluebovine.com/original/?ref=AF12345</td>
+                        <td>6,235</td>
+                        <td>325</td>
+                        <td>$1,300</td>
+                    </tr>
+                    <tr>
+                        <td>Berry Blast</td>
+                        <td>bluebovine.com/berry/?ref=AF12345</td>
+                        <td>3,776</td>
+                        <td>189</td>
+                        <td>$756</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="payment-history">
+            <h3>Payment History</h3>
+            <table class="payment-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Feb 28, 2025</td>
+                        <td>$1,205.45</td>
+                        <td><span class="status-paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td>Jan 31, 2025</td>
+                        <td>$1,176.32</td>
+                        <td><span class="status-paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td>Dec 31, 2024</td>
+                        <td>$1,352.15</td>
+                        <td><span class="status-paid">Paid</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>BlueBovine</h2>
+                <p>© 2025 BlueBovine Energy. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="sign-in.html">Sign In</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">YT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - BlueBovine Energy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>BlueBovine</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="sign-in.html" class="sign-in-btn active">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sign-in-section">
+        <div class="sign-in-container">
+            <h2>Sign In to BlueBovine</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="sign-in-button">Sign In</button>
+                </div>
+                <div class="form-links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">Create Account</a>
+                </div>
+                <div id="loginMessage" class="login-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>BlueBovine</h2>
+                <p>© 2025 BlueBovine Energy. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="sign-in.html">Sign In</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">YT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

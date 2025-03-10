@@ -1,0 +1,468 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #0047ab;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #99ccff;
+}
+
+.sign-in-btn {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    color: #0047ab !important;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 71, 171, 0.7), rgba(0, 71, 171, 0.9)), url('/api/placeholder/1200/600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #ff9900;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e68a00;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.feature {
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0047ab;
+}
+
+/* Affiliate Promo Section */
+.affiliate-promo {
+    background-color: #001f4d;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.affiliate-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.affiliate-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.affiliate-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0047ab;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo, .footer-links, .footer-social {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 2rem;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links h3, .footer-social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a, .social-icon {
+    color: #cccccc;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .social-icon:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sign In Page Styles */
+.sign-in-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 2rem;
+}
+
+.sign-in-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.sign-in-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0047ab;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.sign-in-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in-button:hover {
+    background-color: #003380;
+}
+
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.login-message {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.login-error {
+    background-color: #ffeeee;
+    color: #cc0000;
+}
+
+.login-success {
+    background-color: #eeffee;
+    color: #008800;
+}
+
+/* Affiliate Dashboard Styles */
+.affiliate-dashboard {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.dashboard-header {
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h2 {
+    font-size: 2.5rem;
+    color: #0047ab;
+}
+
+.stats-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 0 1rem 1rem 0;
+}
+
+.stat-card h3 {
+    font-size: 1.1rem;
+    color: #666666;
+    margin-bottom: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0047ab;
+    margin-bottom: 0.5rem;
+}
+
+.stat-trend {
+    font-size: 0.9rem;
+}
+
+.stat-trend.up {
+    color: #00cc00;
+}
+
+.stat-trend.down {
+    color: #cc0000;
+}
+
+.performance-chart {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.chart-container {
+    margin-top: 1.5rem;
+}
+
+.chart-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.affiliate-links, .payment-history {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.links-table, .payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eeeeee;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+.status-paid {
+    background-color: #eeffee;
+    color: #008800;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Designs */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        margin-top: 1rem;
+    }
+    
+    .nav-links li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .stats-cards {
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        margin-right: 0;
+    }
+    
+    th, td {
+        padding: 0.8rem 0.5rem;
+    }
+}
