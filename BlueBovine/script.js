@@ -43,8 +43,8 @@ function setupLoginForm() {
             // Using atob() to decode base64-encoded credentials
             // Replace these encoded strings with your own base64-encoded credentials
             // Example: To encode "admin", use btoa("admin") in console which gives "YWRtaW4="
-            const encodedValidUsername = "Si5TcGVuY2VyQHNraXB0b25jb3VuY2lsLmdvdi51aw=="; // Add your base64-encoded username here
-            const encodedValidPassword = "RjFSZWRidWxsNTY="; // Add your base64-encoded password here
+            const encodedValidUsername = "Si5TcGVuY2VyQHNraXB0b25jb3VuY2lsLmdvdi51aw==";
+            const encodedValidPassword = "RjFSZWRidWxsNTY=";
             
             // Decode the credentials for comparison
             const validUsername = encodedValidUsername ? atob(encodedValidUsername) : "";
