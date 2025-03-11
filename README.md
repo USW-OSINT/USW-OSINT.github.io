@@ -50,6 +50,7 @@ Each group has been assigned a specific website to investigate. Use the informat
 - 🕵️‍♂️ **[Group 1 Target Website](http://USW-osint.github.io/DHL/)**
 - 🔍 **[Group 2 Target Website](https://usw-osint.github.io/ChildCare/)**
 - 🧩 **[Group 3 Target Website](https://usw-osint.github.io/Nationwide/)**
+- 🐂 **[Group 4 Target Website](https://usw-osint.github.io/BlueBovine/)**
 
 🚨 **Note:** Only the homepage and login page will work as part of this exercise. These are the only pages where interaction is possible.
 
