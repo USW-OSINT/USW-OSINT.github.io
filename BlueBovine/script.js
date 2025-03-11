@@ -39,16 +39,18 @@ function setupLoginForm() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         
-        // Here's where you would normally validate against a server
-        // For this demo, we'll use hardcoded validation placeholders
-        // The actual credential checking would be implemented by you
-        
         if (username && password) {
-            // Hardcoded credentials check
-            const validUsername = "your_username_here";
-            const validPassword = "your_password_here";
+            // Using atob() to decode base64-encoded credentials
+            // Replace these encoded strings with your own base64-encoded credentials
+            // Example: To encode "admin", use btoa("admin") in console which gives "YWRtaW4="
+            const encodedValidUsername = "Si5TcGVuY2VyQHNraXB0b25jb3VuY2lsLmdvdi51aw=="; // Add your base64-encoded username here
+            const encodedValidPassword = "RjFSZWRidWxsNTY="; // Add your base64-encoded password here
             
-            // Validate against hardcoded credentials
+            // Decode the credentials for comparison
+            const validUsername = encodedValidUsername ? atob(encodedValidUsername) : "";
+            const validPassword = encodedValidPassword ? atob(encodedValidPassword) : "";
+            
+            // Validate against decoded credentials
             const isValid = (username === validUsername && password === validPassword);
             
             if (isValid) {
@@ -68,12 +70,10 @@ function setupLoginForm() {
                 loginMessage.className = "login-message login-error";
             }
         } else {
-            loginMessage.textContent = "Please enter your username and password";
+            loginMessage.textContent = "Please enter both username and password";
             loginMessage.className = "login-message login-error";
         }
-}
-);
-
+    });
 }
 
 // Helper function to format numbers with commas
