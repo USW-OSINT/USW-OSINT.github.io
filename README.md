@@ -52,7 +52,7 @@ Each group has been assigned a specific website to investigate. Use the informat
 - 🧩 **[Group 3 Target Website](https://usw-osint.github.io/Nationwide/)**
 - 🐂 **[Group 4 Target Website](https://usw-osint.github.io/BlueBovine/)**
 
-🚨 **Note:** Only the homepage and login page will work as part of this exercise. These are the only pages where interaction is possible.
+🚨 **Note:** Only the homepage and login page will work as part of this exercise, there is a final page which contains the information you are required to discover. These are the only pages where interaction is required for this challenge.
 
 
 ## **Rules & Guidelines**
