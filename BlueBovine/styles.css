@@ -439,6 +439,11 @@ th {
     nav {
         flex-direction: column;
         padding: 1rem;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     
     .nav-links {
@@ -464,5 +469,20 @@ th {
     
     th, td {
         padding: 0.8rem 0.5rem;
+    }
+    
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .feature {
+        text-align: center;
+        padding: 1rem;
+        background: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 }
