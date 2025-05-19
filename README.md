@@ -12,6 +12,14 @@ USW has no relation to any organisation that may be used for demonstrative purpo
 ## **Objective**
 Your team has been assigned to an investigative task that requires analysing evidence to uncover key details about a suspect. The information available to you is limited to what has been discarded. Your goal is to piece together important details from the materials provided and use them to progress your investigation.
 
+## **Websites**
+Each group has been assigned a specific website to investigate. Use the information you uncover to gain access.
+
+- 🕵️‍♂️ **[Group 1 Target Website](http://USW-osint.github.io/DHL/)**
+- 🔍 **[Group 2 Target Website](https://usw-osint.github.io/ChildCare/)**
+- 🧩 **[Group 3 Target Website](https://usw-osint.github.io/Nationwide/)**
+- 🐂 **[Group 4 Target Website](https://usw-osint.github.io/BlueBovine/)**
+
 ## **Equipment Provided**
 - 🧤 **Sterile gloves** (use them when handling any materials)
 - 💻 **Computer with internet access** (limited to specific investigation websites)
@@ -42,15 +50,6 @@ Your team has been assigned to an investigative task that requires analysing evi
 ### **3. Exfiltrating Key Information**
 - Once you gain access to the investigation websites, your task is to locate and extract specific pieces of information.
 - Record your findings and be prepared to explain how your team arrived at them.
-
-## 🔗 Target Websites
-
-Each group has been assigned a specific website to investigate. Use the information you uncover to gain access.
-
-- 🕵️‍♂️ **[Group 1 Target Website](http://USW-osint.github.io/DHL/)**
-- 🔍 **[Group 2 Target Website](https://usw-osint.github.io/ChildCare/)**
-- 🧩 **[Group 3 Target Website](https://usw-osint.github.io/Nationwide/)**
-- 🐂 **[Group 4 Target Website](https://usw-osint.github.io/BlueBovine/)**
 
 🚨 **Note:** Only the homepage and login page will work as part of this exercise, there is a final page which contains the information you are required to discover. These are the only pages where interaction is required for this challenge.
 
