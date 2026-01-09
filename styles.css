@@ -81,3 +81,23 @@
     transform: scale(1.02); /* Tiny grow effect */
     text-decoration: none;
   }
+  /* Container for the button group */
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 1rem; /* Increased gap for better spacing */
+  
+  /* ADDS EXTRA PADDING ABOVE THE BUTTONS */
+  margin-top: 2rem; 
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0; /* Optional: adds a faint separator line */
+}
+
+/* Button styling inside the grid */
+.button-grid .btn-link {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0.6rem 0.4rem;
+  font-size: 0.85rem;
+}
