@@ -75,35 +75,46 @@
   }
 
   /* BUTTON STYLING */
-  .btn-link {
-    display: inline-block;
-    background-color: #111827; /* Dark (almost black) looks more premium */
-    color: #fff !important;
-    text-decoration: none;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-align: center;
-    transition: background-color 0.2s;
-    width: 100%; /* Default to full width for alignment */
-    box-sizing: border-box;
-  }
-
   .btn-link:hover {
     background-color: #000000;
   }
 
-  /* Container for the buttons */
+/* The Container (Just ensures buttons wrap if they run out of space) */
 .action-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Force 2 columns */
-  gap: 1rem; /* This creates the padding/space between buttons */
+  width: 100%;
+  font-size: 0; /* Removes phantom spacing issues in Markdown */
   margin-top: 1.5rem;
 }
 
-/* Optional: Ensures buttons are equal height */
-.action-grid .btn-link {
-  width: 100%;
-  box-sizing: border-box;
+/* The Buttons */
+.btn-link {
+  display: inline-block; /* Allows them to sit side-by-side */
+  width: 48%;            /* Fits 2 per row (leaving 2% for gap) */
+  margin-right: 2%;      /* The gap between left and right buttons */
+  margin-bottom: 15px;   /* The gap between top and bottom rows */
+  
+  /* Visual Styling */
+  background-color: #111827;
+  color: #ffffff !important;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem; /* Reset font size */
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding doesn't break layout */
+  vertical-align: middle;
+}
+
+/* Removes the margin from the right-side buttons so they fit perfectly */
+.btn-link:nth-child(even) {
+  margin-right: 0;
+}
+
+/* Mobile Fix: On small screens, make them full width again */
+@media (max-width: 600px) {
+  .btn-link {
+    width: 100%;
+    margin-right: 0;
+  }
 }
