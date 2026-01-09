@@ -53,11 +53,6 @@
         <a href="https://sites.google.com/view/cyberchef4/home?authuser=0" class="btn-link">Challenge #4</a>
     </div>
 </div>
-<h2 style="text-align: center; margin-top: 4rem; margin-bottom: 1rem; font-weight: 800; letter-spacing: -0.03em;">
-  Investigative Toolkit
-</h2>
-<p style="text-align: center; color: #6b7280; margin-bottom: 2rem;">
-  Standard operating tools for digital forensics and OSINT.
 </p>
   <div class="activity-card">
     <div>
