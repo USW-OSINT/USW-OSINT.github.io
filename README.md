@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="styles.css">
 
-## Outreach Activity Library
+<h1>USW Cyber Outreach</h1>
+<p class="subtitle">Select an investigation to begin your session</p>
 
 Welcome to our resource hub. Please select the activity you are taking part in today.
 
