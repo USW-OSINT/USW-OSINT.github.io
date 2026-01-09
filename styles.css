@@ -89,7 +89,7 @@
   
   /* ADDS EXTRA PADDING ABOVE THE BUTTONS */
   margin-top: 2rem; 
-  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-top: 1px solid #f0f0f0; /* Optional: adds a faint separator line */
 }
 
