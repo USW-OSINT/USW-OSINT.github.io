@@ -1,0 +1,83 @@
+/* GLOBAL FONT RESET 
+    Ensures a premium feel using system fonts (San Francisco, Segoe UI, etc.)
+  */
+  .library-grid {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly wider minimum column */
+    gap: 2rem; /* More space between cards */
+    margin-top: 2rem;
+  }
+
+  /* CARD STYLING 
+    Removed heavy borders in favor of subtle depth.
+  */
+  .activity-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea; /* Very light grey */
+    border-radius: 12px; /* Softer, larger corners */
+    padding: 2rem; /* Increased padding for "airiness" */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* Subtle initial state */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* "Springy" smooth animation */
+  }
+
+  /* HOVER STATE 
+    Lifts up and casts a softer, diffused glow rather than a hard shadow.
+  */
+  .activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    border-color: #000000; /* High contrast border on hover for focus */
+  }
+
+  .activity-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.02em; /* Tighter tracking looks more modern */
+    color: #111;
+  }
+
+  .activity-meta {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Wide tracking for metadata */
+    font-weight: 600;
+  }
+
+  .activity-desc {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 2rem;
+    flex-grow: 1;
+  }
+
+  /* BUTTON STYLING 
+    Switched to a "Pill" shape and black/white high contrast.
+  */
+  .btn-link {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    color: #ffffff !important;
+    background-color: #111; /* Nearly black looks more premium than blue */
+    text-decoration: none;
+    border-radius: 9999px; /* Pill shape */
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  .btn-link:hover {
+    background-color: #333;
+    transform: scale(1.02); /* Tiny grow effect */
+    text-decoration: none;
+  }
