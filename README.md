@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="styles.css">
 
 
-Welcome to our resource hub. Please select the activity you are taking part in today.
+<p style="text-align: center;">Welcome to our resource hub. Please select the activity you are taking part in today.</p>>
 
 <div class="tool-bar-container">
   <span class="tool-header">Investigative Toolkit</span>
@@ -10,22 +10,19 @@ Welcome to our resource hub. Please select the activity you are taking part in t
     <a href="https://gchq.github.io/CyberChef/" target="_blank" class="tool-pill">
       <span class="tool-icon">🔪</span> CyberChef
     </a>
-
     <a href="https://www.192.com/" target="_blank" class="tool-pill">
       <span class="tool-icon">👥</span> 192.com
     </a>
-
     <a href="https://web.archive.org/" target="_blank" class="tool-pill">
       <span class="tool-icon">⏳</span> Wayback Machine
     </a>
-
     <a href="https://www.wireshark.org/" target="_blank" class="tool-pill">
       <span class="tool-icon">🦈</span> Wireshark
     </a>
-
     <a href="https://haveibeenpwned.com/" target="_blank" class="tool-pill">
       <span class="tool-icon">🔓</span> Pwned?
     </a>
+
   </div>
 </div>
 <div class="library-grid">
