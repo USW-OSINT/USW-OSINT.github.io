@@ -111,43 +111,57 @@
   margin-right: 0;
 }
 
-/* --- TOOLKIT SECTION --- */
-.tool-grid {
-  display: grid;
-  /* Creates smaller columns (approx 200px wide) */
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
-  gap: 1rem;
+/* --- TOP TOOL BAR --- */
+.tool-bar-container {
   max-width: 1200px;
-  margin: 2rem auto 4rem auto; /* Extra space at bottom */
+  margin: 0 auto 3rem auto; /* Large gap below to separate from Activities */
+  text-align: center;
 }
 
-.tool-card {
+.tool-header {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #9ca3af; /* Light grey label */
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.tool-bar {
   display: flex;
+  flex-wrap: wrap;       /* Allows items to drop to next line on small screens */
+  justify-content: center; /* Centers the bar */
+  gap: 1rem;             /* 16px consistent spacing between tools */
+}
+
+.tool-pill {
+  display: inline-flex;
   align-items: center;
-  background: #ffffff;
-  padding: 1rem 1.25rem;
-  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;   /* Full rounded "Pill" shape */
   text-decoration: none;
-  color: #111827;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-  transition: all 0.2s ease;
+  color: #374151;        /* Dark grey text */
+  font-size: 0.9rem;
   font-weight: 600;
-  font-size: 0.95rem;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  transition: all 0.2s ease;
 }
 
-/* Hover Effect: Subtle lift and blue border */
-.tool-card:hover {
-  transform: translateY(-3px);
-  border-color: #2563eb; /* USW Blue */
-  box-shadow: 0 8px 12px rgba(37, 99, 235, 0.1);
-  color: #2563eb;
+/* Hover Effect */
+.tool-pill:hover {
+  transform: translateY(-2px);
+  background-color: #2563eb; /* USW Blue */
+  color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
-/* Optional: Style for the icon inside the card */
 .tool-icon {
-  margin-right: 12px;
-  font-size: 1.2rem;
+  margin-right: 8px;
+  font-size: 1.1rem;
 }
 
 /* Mobile Fix: On small screens, make them full width again */

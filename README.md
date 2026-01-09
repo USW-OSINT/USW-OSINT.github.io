@@ -3,40 +3,31 @@
 
 Welcome to our resource hub. Please select the activity you are taking part in today.
 
-<div class="tool-grid">
+<div class="tool-bar-container">
+  <span class="tool-header">Investigative Toolkit</span>
   
-  <a href="https://gchq.github.io/CyberChef/" target="_blank" class="tool-card">
-    <span class="tool-icon">🔪</span>
-    CyberChef
-  </a>
+  <div class="tool-bar">
+    <a href="https://gchq.github.io/CyberChef/" target="_blank" class="tool-pill">
+      <span class="tool-icon">🔪</span> CyberChef
+    </a>
 
-  <a href="https://www.192.com/" target="_blank" class="tool-card">
-    <span class="tool-icon">👥</span>
-    192.com (People Search)
-  </a>
+    <a href="https://www.192.com/" target="_blank" class="tool-pill">
+      <span class="tool-icon">👥</span> 192.com
+    </a>
 
-  <a href="https://web.archive.org/" target="_blank" class="tool-card">
-    <span class="tool-icon">⏳</span>
-    Wayback Machine
-  </a>
+    <a href="https://web.archive.org/" target="_blank" class="tool-pill">
+      <span class="tool-icon">⏳</span> Wayback Machine
+    </a>
 
-  <a href="https://www.wireshark.org/" target="_blank" class="tool-card">
-    <span class="tool-icon">🦈</span>
-    Wireshark
-  </a>
+    <a href="https://www.wireshark.org/" target="_blank" class="tool-pill">
+      <span class="tool-icon">🦈</span> Wireshark
+    </a>
 
-  <a href="https://haveibeenpwned.com/" target="_blank" class="tool-card">
-    <span class="tool-icon">🔓</span>
-    Have I Been Pwned?
-  </a>
-
-  <a href="https://www.exploit-db.com/google-hacking-database" target="_blank" class="tool-card">
-    <span class="tool-icon">🔍</span>
-    Google Hacking DB
-  </a>
-
+    <a href="https://haveibeenpwned.com/" target="_blank" class="tool-pill">
+      <span class="tool-icon">🔓</span> Pwned?
+    </a>
+  </div>
 </div>
-
 <div class="library-grid">
 
   <div class="activity-card">
