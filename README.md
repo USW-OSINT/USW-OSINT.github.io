@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 # Outreach Activity Library
 
 Welcome to our resource hub. Please select the activity you are taking part in today.
