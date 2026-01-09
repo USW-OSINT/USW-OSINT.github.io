@@ -26,6 +26,7 @@ Welcome to our resource hub. Please select the activity you are taking part in t
       </p>
     </div>
     <div class="button-grid">
+    <a href="https://gchq.github.io/CyberChef/" class="btn-link">CyberChef Tool Suite</a>
     <a href="https://sites.google.com/view/uswcyberchef/home" class="btn-link">CyberChef Challenge #1</a>
     <a href="https://sites.google.com/view/cyberchef2/home?authuser=0" class="btn-link">CyberChef Challenge #2</a>
     <a href="https://sites.google.com/view/stem1hour/home?authuser=0" class="btn-link">CyberChef Challenge #3</a>
