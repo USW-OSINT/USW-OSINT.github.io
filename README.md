@@ -130,7 +130,7 @@ Welcome to our resource hub. Please select the activity you are taking part in t
       Investigate the daily lives of your targets and discover information about their lives. Use this information to hack into a target service.
       </p>
     </div>
-    <a href="OSINT-README.md" class="btn-link">View resource</a>
+    <a href="OSINT-README.html" class="btn-link">View resource</a>
   </div>
 
 </div>
