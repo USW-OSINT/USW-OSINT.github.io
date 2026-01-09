@@ -53,7 +53,6 @@
         <a href="https://sites.google.com/view/cyberchef4/home?authuser=0" class="btn-link">Challenge #4</a>
     </div>
 </div>
-</p>
   <div class="activity-card">
     <div>
       <div class="activity-meta">OSINT</div>
