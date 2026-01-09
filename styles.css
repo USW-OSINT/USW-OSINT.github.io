@@ -111,6 +111,45 @@
   margin-right: 0;
 }
 
+/* --- TOOLKIT SECTION --- */
+.tool-grid {
+  display: grid;
+  /* Creates smaller columns (approx 200px wide) */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 2rem auto 4rem auto; /* Extra space at bottom */
+}
+
+.tool-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #111827;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  transition: all 0.2s ease;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Hover Effect: Subtle lift and blue border */
+.tool-card:hover {
+  transform: translateY(-3px);
+  border-color: #2563eb; /* USW Blue */
+  box-shadow: 0 8px 12px rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+}
+
+/* Optional: Style for the icon inside the card */
+.tool-icon {
+  margin-right: 12px;
+  font-size: 1.2rem;
+}
+
 /* Mobile Fix: On small screens, make them full width again */
 @media (max-width: 600px) {
   .btn-link {
