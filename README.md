@@ -20,20 +20,19 @@ Welcome to our resource hub. Please select the activity you are taking part in t
 
   <div class="activity-card">
     <div>
-      <div class="activity-meta">Cryptography</div>
-      <h3>Encrypting and decrypting secrets</h3>
-      <p class="activity-desc">
-      Using tools developed by GCHQ to decrypt secret messages and encrypt your own.
-      </p>
+        <div class="activity-meta">Cryptography</div>
+        <h3>Encrypting and decrypting secrets</h3>
+        <p class="activity-desc">
+            Using tools developed by GCHQ to decrypt secret messages and encrypt your own.
+        </p>
     </div>
-    <div class="button-grid">
-    <a href="https://gchq.github.io/CyberChef/" class="btn-link">CyberChef Tool Suite</a>
-    <a href="https://sites.google.com/view/uswcyberchef/home" class="btn-link">CyberChef Challenge #1</a>
-    <a href="https://sites.google.com/view/cyberchef2/home?authuser=0" class="btn-link">CyberChef Challenge #2</a>
-    <a href="https://sites.google.com/view/stem1hour/home?authuser=0" class="btn-link">CyberChef Challenge #3</a>
-    <a href="https://sites.google.com/view/cyberchef4/home?authuser=0" class="btn-link">CyberChef Challenge #4</a>
+    <div class="action-grid">
+        <a href="https://sites.google.com/view/uswcyberchef/home" class="btn-link">Challenge #1</a>
+        <a href="https://sites.google.com/view/cyberchef2/home?authuser=0" class="btn-link">Challenge #2</a>
+        <a href="https://sites.google.com/view/stem1hour/home?authuser=0" class="btn-link">Challenge #3</a>
+        <a href="https://sites.google.com/view/cyberchef4/home?authuser=0" class="btn-link">Challenge #4</a>
     </div>
-  </div>
+</div>
 
   <div class="activity-card">
     <div>

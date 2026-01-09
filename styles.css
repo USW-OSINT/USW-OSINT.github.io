@@ -93,3 +93,17 @@
   .btn-link:hover {
     background-color: #000000;
   }
+
+  /* Container for the buttons */
+.action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Force 2 columns */
+  gap: 1rem; /* This creates the padding/space between buttons */
+  margin-top: 1.5rem;
+}
+
+/* Optional: Ensures buttons are equal height */
+.action-grid .btn-link {
+  width: 100%;
+  box-sizing: border-box;
+}
