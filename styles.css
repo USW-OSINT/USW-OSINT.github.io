@@ -1,117 +1,95 @@
-  /* --- GLOBAL VARIABLES & RESET --- */
-  :root {
-    --bg-page: #f9fafb;       /* Very light grey for background */
-    --bg-card: #ffffff;       /* Pure white for cards */
-    --text-main: #111827;     /* Almost black */
-    --text-muted: #6b7280;    /* Muted grey */
-    --primary: #2563eb;       /* Vibrant blue */
-    --primary-hover: #1d4ed8; 
-    --radius-card: 16px;      /* Modern rounded corners */
-    --radius-btn: 8px;
-  }
-
+  /* MODERN RESET */
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: var(--bg-page);
-    color: var(--text-main);
+    background-color: #f3f4f6; /* Soft grey background makes white cards pop */
+    color: #1f2937;
     margin: 0;
-    padding: 2rem; /* Adds breathing room around the whole page */
+    padding: 40px 20px;
+    line-height: 1.5;
   }
 
-  /* --- THE GRID LAYOUT --- */
+  /* HEADINGS */
+  h1 {
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+
+  /* GRID LAYOUT */
   .library-grid {
     display: grid;
-    /* Responsive: columns are at least 320px wide, or split evenly */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider cards */
     gap: 2rem;
     max-width: 1200px;
-    margin: 3rem auto;
+    margin: 0 auto;
   }
 
-  /* --- CARD STYLING --- */
+  /* SLEEK CARD DESIGN */
   .activity-card {
-    background: var(--bg-card);
-    border-radius: var(--radius-card);
+    background: #ffffff;
     padding: 2rem;
+    border-radius: 16px; /* Smooth rounded corners */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+    border: 1px solid rgba(0,0,0,0.05); /* Barely visible border */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    /* The "Sleek" Look: No border, just subtle depth */
-    border: 1px solid rgba(0,0,0,0.04);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
-                0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    
-    /* Smooth Physics Animation */
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  /* Hover Effect: Lifts up and casts a deeper shadow */
+  /* HOVER EFFECT: Lift and Glow */
   .activity-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
-                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
     border-color: rgba(0,0,0,0.1);
   }
 
-  /* --- TYPOGRAPHY --- */
+  /* TEXT STYLES */
   .activity-meta {
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--primary); /* Highlight color */
-    margin-bottom: 0.75rem;
+    letter-spacing: 0.1em;
+    color: #3b82f6; /* Bright Blue */
+    margin-bottom: 0.5rem;
   }
 
-  .activity-card h3 {
-    margin: 0 0 0.75rem 0;
+  h3 {
+    margin: 0 0 1rem 0;
     font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.025em; /* Tighter heading tracking */
-    color: var(--text-main);
+    font-weight: 700;
+    letter-spacing: -0.03em;
   }
 
   .activity-desc {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-muted);
+    color: #4b5563;
     margin-bottom: 2rem;
-    flex-grow: 1; /* Pushes content apart */
   }
 
-  /* --- BUTTONS & ACTION GRID --- */
-  
-  /* Container for buttons (Add this class to your DIV wrapping the buttons) */
-  .action-grid {
-    display: grid;
-    gap: 0.75rem;
-    width: 100%;
-    margin-top: auto; /* Ensures it sits at the bottom */
-  }
-
-  /* If there are 4 items, make it 2x2. If 1 item, it spans full width. */
-  .action-grid:has(> :nth-child(2)) {
-      grid-template-columns: 1fr 1fr;
-  }
-
-  /* The Button Style */
+  /* BUTTON STYLING */
   .btn-link {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.75rem 1.25rem;
-    background-color: var(--text-main); /* Dark/Black button is trendier */
-    color: white !important;
+    display: inline-block;
+    background-color: #111827; /* Dark (almost black) looks more premium */
+    color: #fff !important;
     text-decoration: none;
-    border-radius: var(--radius-btn);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 0.9rem;
-    transition: background-color 0.2s, transform 0.1s;
     text-align: center;
+    transition: background-color 0.2s;
+    width: 100%; /* Default to full width for alignment */
+    box-sizing: border-box;
   }
 
   .btn-link:hover {
-    background-color: #000;
-    transform: scale(1.02);
+    background-color: #000000;
   }
