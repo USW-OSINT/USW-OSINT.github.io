@@ -1,72 +1,87 @@
 <style>
-/* container for the grid */
-.library-grid {
-  display: grid;
-  /* responsive columns: creates as many 280px columns as fit on screen */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
+  /* GLOBAL FONT RESET 
+    Ensures a premium feel using system fonts (San Francisco, Segoe UI, etc.)
+  */
+  .library-grid {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly wider minimum column */
+    gap: 2rem; /* More space between cards */
+    margin-top: 2rem;
+  }
 
-/* individual activity card */
-.activity-card {
-  border: 1px solid #e1e4e8; /* standard github grey */
-  border-radius: 6px;
-  padding: 1.5rem;
-  background: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  /* CARD STYLING 
+    Removed heavy borders in favor of subtle depth.
+  */
+  .activity-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea; /* Very light grey */
+    border-radius: 12px; /* Softer, larger corners */
+    padding: 2rem; /* Increased padding for "airiness" */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* Subtle initial state */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* "Springy" smooth animation */
+  }
 
-/* hover effect for interactivity cue */
-.activity-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
+  /* HOVER STATE 
+    Lifts up and casts a softer, diffused glow rather than a hard shadow.
+  */
+  .activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    border-color: #000000; /* High contrast border on hover for focus */
+  }
 
-.activity-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-}
+  .activity-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.02em; /* Tighter tracking looks more modern */
+    color: #111;
+  }
 
-.activity-meta {
-  font-size: 0.85rem;
-  color: #586069;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: bold;
-}
+  .activity-meta {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Wide tracking for metadata */
+    font-weight: 600;
+  }
 
-.activity-desc {
-  font-size: 0.95rem;
-  color: #24292e;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-  flex-grow: 1; /* pushes button to bottom */
-}
+  .activity-desc {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 2rem;
+    flex-grow: 1;
+  }
 
-/* mimic a button */
-.btn-link {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  color: #ffffff !important; /* force white text */
-  background-color: #0366d6; /* github blue */
-  text-decoration: none;
-  border-radius: 4px;
-  text-align: center;
-  font-weight: 600;
-  width: fit-content;
-}
-
-.btn-link:hover {
-  background-color: #0255b3;
-  text-decoration: none;
-}
+  /* BUTTON STYLING 
+    Switched to a "Pill" shape and black/white high contrast.
+  */
+  .btn-link {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    color: #ffffff !important;
+    background-color: #111; /* Nearly black looks more premium than blue */
+    text-decoration: none;
+    border-radius: 9999px; /* Pill shape */
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  .btn-link:hover {
+    background-color: #333;
+    transform: scale(1.02); /* Tiny grow effect */
+    text-decoration: none;
+  }
 </style>
 ## Outreach Activity Library
 
