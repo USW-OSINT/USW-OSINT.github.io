@@ -58,7 +58,7 @@
       <div class="activity-meta">OSINT</div>
       <h3>Open Source Intelligence</h3>
       <p class="activity-desc">
-      Using an ethical hacker virtual machine, investigate your assignewd target. Build up an investigation!
+      Using an ethical hacker virtual machine, investigate your assigned target. Build up an investigation!
       </p>
     </div>
     <a href="" class="btn-link">View resource</a>
