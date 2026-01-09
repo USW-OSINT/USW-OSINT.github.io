@@ -37,41 +37,6 @@ Welcome to our resource hub. Please select the activity you are taking part in t
 <p style="text-align: center; color: #6b7280; margin-bottom: 2rem;">
   Standard operating tools for digital forensics and OSINT.
 </p>
-
-<div class="tool-grid">
-  
-  <a href="https://gchq.github.io/CyberChef/" target="_blank" class="tool-card">
-    <span class="tool-icon">🔪</span>
-    CyberChef
-  </a>
-
-  <a href="https://www.192.com/" target="_blank" class="tool-card">
-    <span class="tool-icon">👥</span>
-    192.com (People Search)
-  </a>
-
-  <a href="https://web.archive.org/" target="_blank" class="tool-card">
-    <span class="tool-icon">⏳</span>
-    Wayback Machine
-  </a>
-
-  <a href="https://www.wireshark.org/" target="_blank" class="tool-card">
-    <span class="tool-icon">🦈</span>
-    Wireshark
-  </a>
-
-  <a href="https://haveibeenpwned.com/" target="_blank" class="tool-card">
-    <span class="tool-icon">🔓</span>
-    Have I Been Pwned?
-  </a>
-
-  <a href="https://www.exploit-db.com/google-hacking-database" target="_blank" class="tool-card">
-    <span class="tool-icon">🔍</span>
-    Google Hacking DB
-  </a>
-
-</div>
-
   <div class="activity-card">
     <div>
       <div class="activity-meta">OSINT</div>
@@ -104,5 +69,39 @@ Welcome to our resource hub. Please select the activity you are taking part in t
     </div>
     <a href="https://sites.google.com/view/uswcyber-incident-response/home" class="btn-link">View resource</a>
   </div>
+
+</div>
+
+<div class="tool-grid">
+  
+  <a href="https://gchq.github.io/CyberChef/" target="_blank" class="tool-card">
+    <span class="tool-icon">🔪</span>
+    CyberChef
+  </a>
+
+  <a href="https://www.192.com/" target="_blank" class="tool-card">
+    <span class="tool-icon">👥</span>
+    192.com (People Search)
+  </a>
+
+  <a href="https://web.archive.org/" target="_blank" class="tool-card">
+    <span class="tool-icon">⏳</span>
+    Wayback Machine
+  </a>
+
+  <a href="https://www.wireshark.org/" target="_blank" class="tool-card">
+    <span class="tool-icon">🦈</span>
+    Wireshark
+  </a>
+
+  <a href="https://haveibeenpwned.com/" target="_blank" class="tool-card">
+    <span class="tool-icon">🔓</span>
+    Have I Been Pwned?
+  </a>
+
+  <a href="https://www.exploit-db.com/google-hacking-database" target="_blank" class="tool-card">
+    <span class="tool-icon">🔍</span>
+    Google Hacking DB
+  </a>
 
 </div>
