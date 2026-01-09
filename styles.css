@@ -1,103 +1,117 @@
-/* GLOBAL FONT RESET 
-    Ensures a premium feel using system fonts (San Francisco, Segoe UI, etc.)
-  */
-  .library-grid {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly wider minimum column */
-    gap: 2rem; /* More space between cards */
-    margin-top: 2rem;
+  /* --- GLOBAL VARIABLES & RESET --- */
+  :root {
+    --bg-page: #f9fafb;       /* Very light grey for background */
+    --bg-card: #ffffff;       /* Pure white for cards */
+    --text-main: #111827;     /* Almost black */
+    --text-muted: #6b7280;    /* Muted grey */
+    --primary: #2563eb;       /* Vibrant blue */
+    --primary-hover: #1d4ed8; 
+    --radius-card: 16px;      /* Modern rounded corners */
+    --radius-btn: 8px;
   }
 
-  /* CARD STYLING 
-    Removed heavy borders in favor of subtle depth.
-  */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    margin: 0;
+    padding: 2rem; /* Adds breathing room around the whole page */
+  }
+
+  /* --- THE GRID LAYOUT --- */
+  .library-grid {
+    display: grid;
+    /* Responsive: columns are at least 320px wide, or split evenly */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+
+  /* --- CARD STYLING --- */
   .activity-card {
-    background: #ffffff;
-    border: 1px solid #eaeaea; /* Very light grey */
-    border-radius: 12px; /* Softer, larger corners */
-    padding: 2rem; /* Increased padding for "airiness" */
+    background: var(--bg-card);
+    border-radius: var(--radius-card);
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
-    /* Subtle initial state */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* "Springy" smooth animation */
+    /* The "Sleek" Look: No border, just subtle depth */
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    
+    /* Smooth Physics Animation */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
-  /* HOVER STATE 
-    Lifts up and casts a softer, diffused glow rather than a hard shadow.
-  */
+  /* Hover Effect: Lifts up and casts a deeper shadow */
   .activity-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
-    border-color: #000000; /* High contrast border on hover for focus */
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: rgba(0,0,0,0.1);
+  }
+
+  /* --- TYPOGRAPHY --- */
+  .activity-meta {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary); /* Highlight color */
+    margin-bottom: 0.75rem;
   }
 
   .activity-card h3 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: -0.02em; /* Tighter tracking looks more modern */
-    color: #111;
-  }
-
-  .activity-meta {
-    font-size: 0.75rem;
-    color: #666;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px; /* Wide tracking for metadata */
-    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.025em; /* Tighter heading tracking */
+    color: var(--text-main);
   }
 
   .activity-desc {
     font-size: 1rem;
-    color: #444;
-    line-height: 1.6; /* Improved readability */
+    line-height: 1.6;
+    color: var(--text-muted);
     margin-bottom: 2rem;
-    flex-grow: 1;
+    flex-grow: 1; /* Pushes content apart */
   }
 
-  /* BUTTON STYLING 
-    Switched to a "Pill" shape and black/white high contrast.
-  */
+  /* --- BUTTONS & ACTION GRID --- */
+  
+  /* Container for buttons (Add this class to your DIV wrapping the buttons) */
+  .action-grid {
+    display: grid;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: auto; /* Ensures it sits at the bottom */
+  }
+
+  /* If there are 4 items, make it 2x2. If 1 item, it spans full width. */
+  .action-grid:has(> :nth-child(2)) {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  /* The Button Style */
   .btn-link {
-    display: inline-block;
-    padding: 0.6rem 1.4rem;
-    color: #ffffff !important;
-    background-color: #111; /* Nearly black looks more premium than blue */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--text-main); /* Dark/Black button is trendier */
+    color: white !important;
     text-decoration: none;
-    border-radius: 9999px; /* Pill shape */
+    border-radius: var(--radius-btn);
+    font-weight: 600;
     font-size: 0.9rem;
-    font-weight: 500;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    transition: background-color 0.2s, transform 0.1s;
+    text-align: center;
   }
-  
-  .btn-link:hover {
-    background-color: #333;
-    transform: scale(1.02); /* Tiny grow effect */
-    text-decoration: none;
-  }
-  /* Container for the button group */
-.button-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns */
-  gap: 1rem; /* Increased gap for better spacing */
-  
-  /* ADDS EXTRA PADDING ABOVE THE BUTTONS */
-  margin-top: 2rem; 
-  padding-bottom: 1rem;
-  border-top: 1px solid #f0f0f0; /* Optional: adds a faint separator line */
-}
 
-/* Button styling inside the grid */
-.button-grid .btn-link {
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 0.6rem 0.4rem;
-  font-size: 0.85rem;
-}
+  .btn-link:hover {
+    background-color: #000;
+    transform: scale(1.02);
+  }
