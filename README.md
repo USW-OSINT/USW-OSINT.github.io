@@ -1,63 +1,125 @@
-<link rel="stylesheet" type="text/css" href="style.css">
-
-# **USW OSINT & Digital Forensics Activity – Investigative Task**
-
- <img src="USW_Full_Logo_Red_RGB.png" alt="USW Logo - Red" style="max-width: 10%; height: auto; display: block; margin: auto; border-radius: 8px;">
-
-## **PLEASE READ**
-These websites have been created for educational purposes. These are free to use sandboxes that are hosted via GitHub. Techniques learned in any session run by the USW Cyber Outreach team are not to be used under any circumstances apart from for taking part in the activity outlined below. The websites are interactable safe-spaces and are not to be considered idicative of vulnerabilities in real webites or services.
-
-USW has no relation to any organisation that may be used for demonstrative purposes and the organisation titles used in this activity have not been chosen as part of any particular agenda or purpose.
-
-## **Objective**
-Your team has been assigned to an investigative task that requires analysing evidence to uncover key details about a suspect. The information available to you is limited to what has been discarded. Your goal is to piece together important details from the materials provided and use them to progress your investigation.
-
-## **Websites**
-Each group has been assigned a specific website to investigate. Use the information you uncover to gain access.
-
-- 🕵️‍♂️ **[Group 1 Target Website](http://USW-osint.github.io/DHL/)**
-- 🔍 **[Group 2 Target Website](https://usw-osint.github.io/ChildCare/)**
-- 🧩 **[Group 3 Target Website](https://usw-osint.github.io/Nationwide/)**
-- 🐂 **[Group 4 Target Website](https://usw-osint.github.io/BlueBovine/)**
-
-## **Equipment Provided**
-- 🧤 **Sterile gloves** (use them when handling any materials)
-- 💻 **Computer with internet access** (limited to specific investigation websites)
-- 📌 **Pinboards and materials** to organise findings
-
+---
+layout: page
+title: Activity Library
+permalink: /library/
 ---
 
-## **Investigation Process**
+<style>
+  /* container for the grid */
+  .library-grid {
+    display: grid;
+    /* responsive columns: creates as many 280px columns as fit on screen */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
 
-### **1. Evidence Examination**
-- You have been provided with a bag containing various items. Everything inside may be relevant, so examine each item carefully.
-- Record any potential leads, including:
-  - Names
-  - Addresses
-  - Phone numbers
-  - Email addresses
-  - Receipts
-  - Tickets
-  - Handwritten notes
-  - Any other identifying information
-- Take photos or make notes of anything that seems useful.
+  /* individual activity card */
+  .activity-card {
+    border: 1px solid #e1e4e8; /* standard github grey */
+    border-radius: 6px;
+    padding: 1.5rem;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-### **2. Digital Investigation**
-- Using the information you have gathered, attempt to access the designated investigation website.
-- Some of the details found may only help with the password. You will need the correct username AND password.
-- **The accounts on these websites will only accept the correct credentials, meaning you must ensure any details you use are accurate.**
+  /* hover effect for interactivity cue */
+  .activity-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
 
-### **3. Exfiltrating Key Information**
-- Once you gain access to the investigation websites, your task is to locate and extract specific pieces of information.
-- Record your findings and be prepared to explain how your team arrived at them.
+  .activity-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
 
-🚨 **Note:** Only the homepage and login page will work as part of this exercise, there is a final page which contains the information you are required to discover. These are the only pages where interaction is required for this challenge.
+  .activity-meta {
+    font-size: 0.85rem;
+    color: #586069;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+
+  .activity-desc {
+    font-size: 0.95rem;
+    color: #24292e;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* pushes button to bottom */
+  }
+
+  /* mimic a button */
+  .btn-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #ffffff !important; /* force white text */
+    background-color: #0366d6; /* github blue */
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    width: fit-content;
+  }
+  
+  .btn-link:hover {
+    background-color: #0255b3;
+    text-decoration: none;
+  }
+</style>
 
 
-## **Rules & Guidelines**
-✔ **Confidentiality**: Treat the information as sensitive—do not share findings with other teams.  
-✔ **Teamwork**: Work collaboratively, discussing your findings and theories.  
-✔ **Methodical Approach**: Be systematic in your search, ensuring no clue is overlooked.  
-✔ **Respect Materials**: Do not damage or discard any evidence. All materials must be returned at the end of the activity.
+# Outreach Activity Library
 
-Good luck, investigators! 🚔🔍 
+Welcome to our resource hub. Please select the activity you are taking part in today.
+
+<div class="library-grid">
+
+  <div class="activity-card">
+    <div>
+      <div class="activity-meta">Network Security</div>
+      <h3>Raspberry Pis and Wireshark</h3>
+      <p class="activity-desc">
+      </p>
+    </div>
+    <a href="" class="btn-link">View resource</a>
+  </div>
+
+  <div class="activity-card">
+    <div>
+      <div class="activity-meta">Cryptography</div>
+      <h3>Encrypting and decrypting secrets</h3>
+      <p class="activity-desc">
+      </p>
+    </div>
+    <a href="" class="btn-link">View resource</a>
+  </div>
+
+  <div class="activity-card">
+    <div>
+      <div class="activity-meta">OSINT</div>
+      <h3>Open Source Intelligence</h3>
+      <p class="activity-desc">
+      </p>
+    </div>
+    <a href="" class="btn-link">View resource</a>
+  </div>
+
+  <div class="activity-card">
+    <div>
+      <div class="activity-meta">Social Engineering</div>
+      <h3>Hacking People - Investigation</h3>
+      <p class="activity-desc">
+      </p>
+    </div>
+    <a href="OSINT-README.md" class="btn-link">View resource</a>
+  </div>
+
+</div>
