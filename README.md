@@ -22,6 +22,9 @@
     <a href="https://haveibeenpwned.com/" target="_blank" class="tool-pill">
       <span class="tool-icon">🔓</span> Pwned?
     </a>
+    <a href="https://haveibeenpwned.com/Passwords" target="_blank" class="tool-pill">
+      <span class="tool-icon">🔑</span> Password Checker
+    </a>
 
   </div>
 </div>
