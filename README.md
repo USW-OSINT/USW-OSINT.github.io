@@ -16,7 +16,7 @@
     <a href="https://web.archive.org/" target="_blank" class="tool-pill">
       <span class="tool-icon">⏳</span> Wayback Machine
     </a>
-    <a href="https://www.wireshark.org/" target="_blank" class="tool-pill">
+    <a href="https://www.wireshark.org/docs/wsug_html_chunked/ChCapCapturingSection.html" target="_blank" class="tool-pill">
       <span class="tool-icon">🦈</span> Wireshark
     </a>
     <a href="https://haveibeenpwned.com/" target="_blank" class="tool-pill">
