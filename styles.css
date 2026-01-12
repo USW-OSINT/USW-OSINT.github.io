@@ -130,20 +130,22 @@
 
 .tool-bar {
   display: flex;
-  flex-wrap: wrap;       /* Allows items to drop to next line on small screens */
+  flex-wrap: nowrap;     /* Keep the tools on a single line */
   justify-content: center; /* Centers the bar */
-  gap: 1rem;             /* 16px consistent spacing between tools */
+  gap: 0.75rem;          /* Tighten spacing so all pills fit in one row */
+  overflow-x: auto;      /* Prevent wrapping on smaller screens */
+  -webkit-overflow-scrolling: touch;
 }
 
 .tool-pill {
   display: inline-flex;
   align-items: center;
   background-color: #ffffff;
-  padding: 0.6rem 1.2rem;
+  padding: 0.5rem 1rem;
   border-radius: 50px;   /* Full rounded "Pill" shape */
   text-decoration: none;
   color: #374151;        /* Dark grey text */
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   border: 1px solid rgba(0,0,0,0.05);
   box-shadow: 0 2px 4px rgba(0,0,0,0.03);
