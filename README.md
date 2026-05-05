@@ -50,10 +50,11 @@
         </p>
     </div>
     <div class="action-grid">
-        <a href="https://sites.google.com/view/uswcyberchef/home" class="btn-link">Challenge #1</a>
-        <a href="https://sites.google.com/view/cyberchef2/home?authuser=0" class="btn-link">Challenge #2</a>
-        <a href="https://sites.google.com/view/stem1hour/home?authuser=0" class="btn-link">Challenge #3</a>
-        <a href="https://sites.google.com/view/cyberchef4/home?authuser=0" class="btn-link">Challenge #4</a>
+        <a href="https://sites.google.com/view/cyberchef-starwars?usp=sharing" class="btn-link">A Star Wars story challenge</a>
+        <a href="https://sites.google.com/view/cyberchef-minecraft?usp=sharing" class="btn-link">A Minecraft challenge</a>
+        <a href="https://sites.google.com/view/uswcyberchef?usp=sharing" class="btn-link">A Lord of The Rings challenge</a>
+        <a href="https://sites.google.com/view/cyberchef4?usp=sharing" class="btn-link">Challenge 4</a>
+        <a href="https://sites.google.com/view/cyberchef2?usp=sharing" class="btn-link">Challenge 5</a>
     </div>
 </div>
   <div class="activity-card">
