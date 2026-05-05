@@ -94,7 +94,10 @@
 
 /* The Buttons */
 .btn-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
   background-color: #111827;
   color: #ffffff !important;
   text-decoration: none;
