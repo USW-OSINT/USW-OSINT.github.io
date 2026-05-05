@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="styles.css">
 
+<a href="cy.html" class="lang-toggle">🏴󠁧󠁢󠁷󠁬󠁳󠁿 Cymraeg</a>
 
-<p style="text-align: center;">Welcome to our resource hub. Please select the activity you are taking part in today.</p>>
+<p style="text-align: center;">Welcome to our resource hub. Please select the activity you are taking part in today.</p>
 
 <div class="tool-bar-container">
   <span class="tool-header">Investigative Toolkit</span>

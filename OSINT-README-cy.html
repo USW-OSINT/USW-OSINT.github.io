@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="cy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gweithgaredd OSINT a Fforenseg Ddigidol PDC</title>
+    <style>
+        :root {
+            --text-primary: #24292e;
+            --text-secondary: #586069;
+            --link-color: #0366d6;
+            --border-color: #eaecef;
+            --bg-color: #ffffff;
+            --code-bg: #f6f8fa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .markdown-body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 45px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 2em;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.5em;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid var(--border-color);
+            margin-top: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.25em;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 2em;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 0.25em;
+        }
+
+        blockquote {
+            margin: 0;
+            padding: 0 1em;
+            color: var(--text-secondary);
+            border-left: 0.25em solid #dfe2e5;
+            background-color: #f9f9f9;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        hr {
+            height: 0.25em;
+            padding: 0;
+            margin: 24px 0;
+            background-color: var(--border-color);
+            border: 0;
+        }
+
+        img {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .lang-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            z-index: 100;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 50px;
+            padding: 0.4rem 0.9rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #374151;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.2s ease;
+        }
+
+        .lang-toggle:hover {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+            text-decoration: none;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<a href="OSINT-README.html" class="lang-toggle">🏴󠁧󠁢󠁥󠁮󠁧󠁿 English</a>
+
+    <div class="markdown-body">
+
+        <h1>Gweithgaredd OSINT a Fforenseg Ddigidol PDC – Tasg Ymchwiliol</h1>
+
+        <img src="USW_Full_Logo_Red_RGB.png" alt="Logo PDC - Coch" style="max-width: 150px; height: auto; display: block; margin: auto; border-radius: 8px; margin-bottom: 2rem;">
+
+        <h2>DARLLENWCH HWN</h2>
+        <blockquote>
+            <p>Mae'r gwefannau hyn wedi'u creu at ddibenion addysgol. Mae'r rhain yn flychau tywod am ddim sy'n cael eu lletya trwy GitHub. Ni ddylid defnyddio technegau a ddysgir mewn unrhyw sesiwn a gynhelir gan dîm Allgymorth Seiber PDC o dan unrhyw amgylchiadau ac eithrio ar gyfer cymryd rhan yn y gweithgaredd a amlinellir isod. Mae'r gwefannau yn ardaloedd diogel rhyngweithiadwy ac nid ydynt i'w hystyried fel mynegiant o wendidau mewn gwefannau neu wasanaethau go iawn.</p>
+            <p>Nid oes gan PDC unrhyw berthynas ag unrhyw sefydliad y gellir ei ddefnyddio at ddibenion arddangos, ac nid yw teitlau'r sefydliadau a ddefnyddir yn y gweithgaredd hwn wedi'u dewis fel rhan o unrhyw agenda neu bwrpas penodol.</p>
+        </blockquote>
+
+        <h2>Amcan</h2>
+        <p>Mae eich tîm wedi'i neilltuo i dasg ymchwiliol sy'n gofyn am ddadansoddi tystiolaeth i ddarganfod manylion allweddol am darged. Mae'r wybodaeth sydd ar gael i chi wedi'i chyfyngu i'r hyn sydd wedi'i daflu. Eich nod yw cydosod manylion pwysig o'r deunyddiau a ddarperir a'u defnyddio i symud eich ymchwiliad yn ei flaen.</p>
+
+        <h2>Gwefannau</h2>
+        <p>Mae pob grŵp wedi'i neilltuo i wefan benodol i'w ymchwilio. Defnyddiwch y wybodaeth a ddatgelwch i gael mynediad.</p>
+        <ul>
+            <li>🕵️‍♂️ <strong><a href="https://usw-osint.github.io/DHL/">Gwefan Targed Grŵp 1</a></strong></li>
+            <li>🔍 <strong><a href="https://usw-osint.github.io/ChildCare/">Gwefan Targed Grŵp 2</a></strong></li>
+            <li>🧩 <strong><a href="https://usw-osint.github.io/Nationwide/">Gwefan Targed Grŵp 3</a></strong></li>
+            <li>🐂 <strong><a href="https://usw-osint.github.io/BlueBovine/">Gwefan Targed Grŵp 4</a></strong></li>
+        </ul>
+
+        <h2>Offer a Ddarperir</h2>
+        <ul>
+            <li>🧤 <strong>Menig sterile</strong> (defnyddiwch nhw wrth drin unrhyw ddeunyddiau)</li>
+            <li>💻 <strong>Cyfrifiadur gyda mynediad i'r rhyngrwyd</strong> (cyfyngedig i wefannau ymchwilio penodol)</li>
+            <li>📌 <strong>Byrddau pinnau a deunyddiau</strong> i drefnu canfyddiadau</li>
+        </ul>
+
+        <hr>
+
+        <h2>Proses Ymchwilio</h2>
+
+        <h3>1. Archwilio Tystiolaeth</h3>
+        <ul>
+            <li>Mae bag wedi'i ddarparu i chi sy'n cynnwys eitemau amrywiol. Gallai popeth y tu mewn fod yn berthnasol, felly archwilwch bob eitem yn ofalus.</li>
+            <li>Cofnodwch unrhyw arweiniadau posib, gan gynnwys:
+                <ul>
+                    <li>Enwau</li>
+                    <li>Cyfeiriadau</li>
+                    <li>Rhifau ffôn</li>
+                    <li>Cyfeiriadau e-bost</li>
+                    <li>Derbynebau</li>
+                    <li>Tocynnau</li>
+                    <li>Nodiadau ysgrifenedig â llaw</li>
+                    <li>Unrhyw wybodaeth adnabod arall</li>
+                </ul>
+            </li>
+            <li>Tynnwch luniau neu gwnewch nodiadau o unrhyw beth sy'n ymddangos yn ddefnyddiol.</li>
+        </ul>
+
+        <h3>2. Ymchwiliad Digidol</h3>
+        <ul>
+            <li>Gan ddefnyddio'r wybodaeth rydych chi wedi'i chasglu, ceisiwch gael mynediad i'r wefan ymchwilio benodedig.</li>
+            <li>Efallai mai dim ond gyda'r cyfrinair y bydd rhai o'r manylion a ganfuwyd yn helpu. Bydd angen yr enw defnyddiwr A'r cyfrinair cywir arnoch chi.</li>
+            <li><strong>Dim ond y manylion mewngofnodi cywir fydd y cyfrifon ar y gwefannau hyn yn eu derbyn, sy'n golygu bod rhaid i chi sicrhau bod unrhyw fanylion a ddefnyddiwch yn gywir.</strong></li>
+        </ul>
+
+        <h3>3. Dod o Hyd i Wybodaeth Allweddol a'i Thynnu</h3>
+        <ul>
+            <li>Unwaith y cewch fynediad i'r gwefannau ymchwilio, eich tasg yw lleoli a thynnu darnau penodol o wybodaeth.</li>
+            <li>Cofnodwch eich canfyddiadau a byddwch yn barod i egluro sut y cyrhaeddodd eich tîm atynt.</li>
+        </ul>
+
+        <blockquote>
+            <p>🚨 <strong>Nodyn:</strong> Dim ond y dudalen gartref a'r dudalen fewngofnodi fydd yn gweithio fel rhan o'r ymarfer hwn; mae tudalen olaf sy'n cynnwys y wybodaeth sydd angen i chi ei darganfod. Dim ond y tudalennau hyn sydd angen rhyngweithio â nhw ar gyfer yr her hon.</p>
+        </blockquote>
+
+        <h2>Rheolau a Chanllawiau</h2>
+        <ul>
+            <li>✔ <strong>Dim cydweithio rhwng timau</strong>: Gweithiwch o fewn eich grŵp yn unig — peidiwch â rhannu canfyddiadau â thimau eraill.</li>
+            <li>✔ <strong>Gwaith tîm</strong>: Gweithiwch ar y cyd, gan drafod eich canfyddiadau a'ch damcaniaethau.</li>
+            <li>✔ <strong>Dull Systematig</strong>: Byddwch yn fethodig yn eich chwiliad, gan sicrhau nad oes unrhyw gliw yn cael ei esgeuluso.</li>
+            <li>✔ <strong>Parchu Deunyddiau</strong>: Peidiwch â difrodi na thaflu unrhyw dystiolaeth. Rhaid dychwelyd yr holl ddeunyddiau ar ddiwedd y gweithgaredd.</li>
+        </ul>
+
+        <p>Pob lwc, ymchwilwyr! 🚔🔍</p>
+
+    </div>
+
+</body>
+</html>
