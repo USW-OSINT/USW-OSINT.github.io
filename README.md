@@ -43,20 +43,20 @@
 
   <div class="activity-card">
     <div>
-        <div class="activity-meta">Cryptography</div>
-        <h3>Encrypting and decrypting secrets</h3>
-        <p class="activity-desc">
-            Using tools developed by GCHQ to decrypt secret messages and encrypt your own.
-        </p>
+      <div class="activity-meta">Cryptography</div>
+      <h3>Encrypting and decrypting secrets</h3>
+      <p class="activity-desc">
+        Using tools developed by GCHQ to decrypt secret messages and encrypt your own.
+      </p>
     </div>
     <div class="action-grid">
-        <a href="https://sites.google.com/view/cyberchef-starwars?usp=sharing" class="btn-link">A Star Wars story challenge</a>
-        <a href="https://sites.google.com/view/cyberchef-minecraft?usp=sharing" class="btn-link">A Minecraft challenge</a>
-        <a href="https://sites.google.com/view/uswcyberchef?usp=sharing" class="btn-link">A Lord of The Rings challenge</a>
-        <a href="https://sites.google.com/view/cyberchef4?usp=sharing" class="btn-link">Challenge 4</a>
-        <a href="https://sites.google.com/view/cyberchef2?usp=sharing" class="btn-link">Challenge 5</a>
+      <a href="https://sites.google.com/view/cyberchef-starwars?usp=sharing" class="btn-link">A Star Wars story challenge</a>
+      <a href="https://sites.google.com/view/cyberchef-minecraft?usp=sharing" class="btn-link">A Minecraft challenge</a>
+      <a href="https://sites.google.com/view/uswcyberchef?usp=sharing" class="btn-link">A Lord of The Rings challenge</a>
+      <a href="https://sites.google.com/view/cyberchef4?usp=sharing" class="btn-link">Challenge A</a>
+      <a href="https://sites.google.com/view/cyberchef2?usp=sharing" class="btn-link">Challenge B</a>
     </div>
-</div>
+  </div>
   <div class="activity-card">
     <div>
       <div class="activity-meta">OSINT</div>

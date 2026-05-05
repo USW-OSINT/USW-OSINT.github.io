@@ -79,36 +79,31 @@
     background-color: #000000;
   }
 
-/* The Container (Just ensures buttons wrap if they run out of space) */
+/* Button grid — 2-column, gaps handled by CSS Grid */
 .action-grid {
-  width: 100%;
-  font-size: 0; /* Removes phantom spacing issues in Markdown */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
   margin-top: 1.5rem;
+}
+
+/* Last button spans full width when it falls on an odd position */
+.action-grid .btn-link:last-child:nth-child(odd) {
+  grid-column: span 2;
 }
 
 /* The Buttons */
 .btn-link {
-  display: inline-block; /* Allows them to sit side-by-side */
-  width: 48%;            /* Fits 2 per row (leaving 2% for gap) */
-  margin-right: 2%;      /* The gap between left and right buttons */
-  margin-bottom: 15px;   /* The gap between top and bottom rows */
-  
-  /* Visual Styling */
+  display: block;
   background-color: #111827;
   color: #ffffff !important;
   text-decoration: none;
   padding: 0.75rem 1rem;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 0.9rem; /* Reset font size */
+  font-size: 0.9rem;
   text-align: center;
-  box-sizing: border-box; /* Ensures padding doesn't break layout */
-  vertical-align: middle;
-}
-
-/* Removes the margin from the right-side buttons so they fit perfectly */
-.btn-link:nth-child(even) {
-  margin-right: 0;
+  box-sizing: border-box;
 }
 
 /* --- TOP TOOL BAR --- */
@@ -166,10 +161,13 @@
   font-size: 1.1rem;
 }
 
-/* Mobile Fix: On small screens, make them full width again */
+/* Mobile: collapse to single column */
 @media (max-width: 600px) {
-  .btn-link {
-    width: 100%;
-    margin-right: 0;
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-grid .btn-link:last-child:nth-child(odd) {
+    grid-column: span 1;
   }
 }
